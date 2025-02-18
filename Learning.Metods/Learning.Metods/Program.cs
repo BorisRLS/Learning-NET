@@ -22,9 +22,12 @@ class Program
         Console.WriteLine(user1.FullName);
         Console.WriteLine(user2.FullName);
         Console.WriteLine(user3.FullName);
-    }*/
-    //Вычисление числа фибоначчи
-    static void Main(string[] args)
+    }
+    */
+
+    //Вычисление числа фибоначчи рекурсивным методом
+    /*
+     static void Main(string[] args)
     {
         Console.WriteLine(Fibonacci(11));
     }
@@ -37,6 +40,24 @@ class Program
             return Fibonacci(value - 1) + Fibonacci(value - 2);
         }
     }
+    */
+    static void Main(string[] args)
+    {
+        var i1 = 0;
+        var i2 = 1;
+        var Fib = 0;
+        Console.WriteLine(i1);
+        Console.WriteLine(i2);
+        for (var i = 1; i < 11; i++)
+        {
+
+            Fib = i2 + i1;
+            i1= i2;
+            i2 = Fib;
+            Console.WriteLine(Fib);
+        }
+    }
+
 }
 
 
